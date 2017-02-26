@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CitiHealth | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+   
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+<!--     <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script> -->
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+  </head>
+
+  <body class="nav-md" style="background:#73879C;">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-heartbeat"></i> <span>CitiHealth</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/NEWimg.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Home</a>
+              
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Challenges <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form.html">General Form</a></li>
+                      <li><a href="form_advanced.html">Advanced Components</a></li>
+                      <li><a href="form_validation.html">Form Validation</a></li>
+                      <li><a href="form_wizards.html">Form Wizard</a></li>
+                      <li><a href="form_upload.html">Form Upload</a></li>
+                      <li><a href="form_buttons.html">Form Buttons</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Linked Apps <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="tables.html">Tables</a></li>
+                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Rewards Balance <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="chartjs.html">Chart JS</a></li>
+                      <li><a href="chartjs2.html">Chart JS2</a></li>
+                      <li><a href="morisjs.html">Moris JS</a></li>
+                      <li><a href="echarts.html">ECharts</a></li>
+                      <li><a href="other_charts.html">Other Charts</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+<!--               <div class="menu_section">
+                <h3>Miscellaneous</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-sitemap"></i> Rewards <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="#level1_1">Level One</a>
+                        <li><a>Level One<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            <li class="sub_menu"><a href="level2.html">Level Two</a>
+                            </li>
+                            <li><a href="#level2_1">Level Two</a>
+                            </li>
+                            <li><a href="#level2_2">Level Two</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="#level1_2">Level One</a>
+                        </li>
+                    </ul>
+                  </li>                  
+                  <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+                </ul>
+              </div> -->
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-heartbeat"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/NEWimg.jpg" alt="">Dan G.
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/NEWimg.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/NEWimg.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/NEWimg.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/NEWimg.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main" style="background: #2A3F54;">
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="dashboard_graph">
+
+                <div class="row x_title">
+                  <div class="col-md-6">
+                    <h3>Your Health Expenses</br></h3>
+                  </div>
+                  </br>
+                  <div class="col-md-6">
+                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; margin-top: 8px;">
+                      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                      <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                    </div>
+                  </div>
+                </div>
+                </br>
+
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                  <!-- <div id="chart_plot_01" class="demo-placeholder"></div> -->
+                  <!--
+                  <td>
+                    <center>
+                    <canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+                    </center>
+                  </td>
+                  -->
+
+<!--                   <td>
+                    <table class="tile_info">
+                      <tr>
+                        <td>
+                          <p><i class="fa fa-square blue"></i>IOS </p>
+                        </td>
+                        <td>30%</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><i class="fa fa-square green"></i>Android </p>
+                        </td>
+                        <td>10%</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>
+                          <p><i class="fa fa-square aero"></i>Symbian </p>
+                        </td>
+                        <td>15%</td>
+                      </tr>
+                      
+                    </table>
+                  </td> -->
+                </div>
+                <center>
+                  <div class="col-md-3 col-sm-12 col-xs-12 bg-white">
+                    <div class="x_title">
+                      <h3>Health Purchase Breakdown</h3>
+                      <div class="clearfix"></div>
+                      <h5>Your transaction history helps understand how your spending on nutrition, healthcare and fitness changes over time.  Click on a section to see how that spending affects your physical health. </h5>
+                    </div>
+
+                    <div>
+                      <img width="100%" src="images/Health_Problems.png"></img>
+                    </div>
+                 
+                    </br>
+                    <div class="col-md-12 col-sm-12 col-xs-6">
+                     
+                    <td>
+                      <table class="tile_info">
+                        <tr>
+                          <td>
+                            <p><i class="fa fa-square green"></i><a href="#nutrition">Nutrition</a> </p>
+                          </td>
+                          <td>44%</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p><i class="fa fa-square aero"></i><a href="#healthcare">Healthcare </a></p>
+                          </td>
+                          <td>38%</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p><i class="fa fa-square purple"></i><a href="#fitness">Fitness </a></p>
+                          </td>
+                          <td>18%</td>
+                        </tr>
+                      </table>
+                    </td>  
+                
+                    <!-- <div>
+                      <p>Facebook Campaign</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p>Twitter Campaign</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="60"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-6">
+                    <div>
+                      <p>Conventional Media</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p>Bill boards</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </center>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
+
+          </div>
+
+
+          </br></br>
+          <div id="CTA1">
+            <center>
+              <div style="display: block; width: 240px; height: 80px; background-color: #94c63e;border:1px solid #94c63e; border-radius: 10px;">
+                  <div style="height: 20px"></div>
+                  <h4><a style="font-size: 20px;color: white; font-weight: 300" href="#ChooseChallenge"> Choose a Challenge</a></h4>
+              </div>
+            </center>
+          </div>
+          
+          </br></br>
+
+          <div id="CTA2">
+            <center>
+              <div style="height: 20px"></div>
+              <div style="display: block; width: 240px; height: 80px; background-color: #94c63e;border:1px solid #94c63e; border-radius: 10px;">
+                  <h4 style="padding-top:20px;"><a class="challenge-hover" style="font-size: 20px;color: white; font-weight: 300" href="#AppLinkage">Link to Apps</a></h4>
+              </div>
+            </center>      
+          </div>
+
+          <style>
+            a.challenge-hover:hover{
+              color:navy;
+            }
+          </style>
+
+
+          </br></br></br></br></br></br></br></br></br></br>
+          </br></br></br></br></br></br></br></br></br></br>
+          
+
+          <div class="row">
+            <div id="nutrition">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel tile">
+                  <center><h1> NUTRITION</h1></center>
+                  <div class="HICO-copy">
+                    <center><p>
+                      Research shows that the more frequently you eat meals you have prepared yourself the less likely you are to suffer from diet related illnesses such as diabetes and heart disease. [Center for Disease Control]  The table below shows you the most frequent food-related charges on your card over the last three months, by percentage of total food spend.
+                    </p></center>
+                  </div>
+                  <div class="HICO-chart">
+                    <img width="100%" src="images/Eating_Habits.png"></img>
+                  </div>
+                  <hr>
+                  <div class="HICO-list">
+                    <center><h3>Top 5 Nutrition Purchases</h3><center>
+                    </br>
+
+                    <div style="margin-left:18%">
+                      <h4 align="left">
+                        <ol>
+                          <li>Arlene’s Grocery: 12.1%</li>
+                          <li>Taqueriea: 9.3%</li>
+                          <li>Rosie’s Pizza: 8.5%</li>
+                          <li>Just Salad: 6.2%</li>
+                          <li>Maoz Falafel: 5.1%</li>
+                        </ol>
+                      </h4> 
+                    </div>  
+                    
+                  </div>
+                  <hr>
+                  <div class="HICO-copy">
+                    <center><p>
+                      <a href="#ChooseChallenge">Want to start a week-long nutrition spending challenge?</a>
+                    </p></center>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </br></br></br></br></br></br></br></br></br></br>
+          </br></br></br></br></br></br></br></br></br></br>
+          <div class="row">
+            <div id="healthcare">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel tile">
+                  <center><h1>HEALTHCARE</h1></center>
+                  <div class="HICO-copy">
+                    <center><p>
+                      Healthcare is constantly cited as the biggest unplanned expense American consumers have.  The more you do to look after your health, the lower the risk is that you’ll be hit with these unexpected costs.  Here’s a look back at your last 12 months of healthcare expenses; keeping them low is our goal.
+                    </p></center>
+                  </div>
+                  <div class="HICO-chart">
+                    <img width="100%" src="images/Doctor_Habit.png"></img>
+                  </div>
+                  <hr>
+                  <div class="HICO-list">
+                    <center><h3>Top 5 Healthcare Purchases</h3><center>
+                    </br>
+
+                    <div style="margin-left:8%">
+                      <h4 align="left">
+                        <ol>
+                          <li>Midtown Physical Therapy Center: 22%</li>
+                          <li>NYU Surgical Center: 21%</li>
+                          <li>NYT MRI Services:15%</li>
+                          <li>CVS Pharmacy: 6%</li>
+                          <li>Murray Hill Dentistry: 5%</li>
+                        </ol>
+                      </h4> 
+                    </div> 
+                    
+                  </div>
+                  <hr>
+                  <div class="HICO-copy">
+                    <center><p>
+                      <h5><a href="#ChooseChallenge">Want to start a week-long healthcare spending challenge?</a></h5>
+                    </p></center>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </br></br></br></br></br></br></br></br></br></br>
+          </br></br></br></br></br></br></br></br></br></br>
+
+          <div class="row">
+            <div id="fitness">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel tile">
+                  <center><h1>FITNESS</h1></center>
+
+                  <div class="HICO-copy">
+                    <center><p>
+                      We view money spent on maintaining your fitness, both physical and mental, as important preventive work that helps decrease your financial work.  Staying consistent is key; a lot of spending in a short period of time is not as important as less spending steadily over time.  Here’s a look at your last 12 months of fitness expenses.
+                    </p></center>
+                  </div>
+                  <div class="HICO-chart">
+                    <img width="100%" src="images/Sweating_Habits.png"></img>
+                  </div>
+                  <hr>
+                  <div class="HICO-list">
+                    <center><h3>Top 5 Fitness Purchases</h3><center>
+                    </br>
+                    <div style="margin-left:15%">
+                      <h4 align="left">
+                        <ol>
+                          <li>National Tennis Center: 22%</li>
+                          <li>West Side Tennis Club: 21%</li>
+                          <li>New York Sports Club: 8%</li>
+                          <li>Paragon Sports: 7%</li>
+                          <li>Grand Central Racket: 7%</li>
+                        </ol>
+                      </h4> 
+                    </div> 
+                    
+                  </div>
+                  <hr>
+                  <div class="HICO-copy">
+                    <center><p>
+                      <a href="#ChooseChallenge">Want to start a week-long fitness spending challenge and get a bunch of reward points?</a>
+                    </p></center>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </br></br></br></br></br></br></br></br></br></br>
+
+          <div style="height: 800px; display: block;"></div>
+          
+          <div class="row">
+            <div id="ChooseChallenge">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel tile">
+                  <div class="x_title">
+                    <h1>Choose Challenge</h1>
+                    <div class="clearfix"></div>
+                  </div>
+
+                    <div class="x_title">
+                      <h4>Choose a week-long challenges to improve your health and earn rewards points.</h4>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+
+                      <table class="table table-striped" style="font-size: 16px;">
+                        <thead>
+                          <tr style="color:#94c63e; font-size:20px;">
+                            <th>Challenge</th>
+                            <th>Reward</th>
+                            <th>Completed?</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row"><a href="#AppLinkage">Walk 10,000 steps in 1 week</a></td>
+                            <td>2,000 points</td>
+                            <td><center>No</center></td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><a href="#">Increase % of nutrition spend on groceries</a></td>
+                            <td>2,000 points</td>
+                            <td><center>No</center></td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><a href="#">Enter dietary information every day next week</a></td>
+                            <td>2,000 points</td>
+                            <td><center>No</center></td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><a href="#">Sleep for seven+ hours a night five days next week</a></td>
+                            <td>2,000 points</td>
+                            <td><center>No</center></td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><a href="#">Go to yoga three times next week</a></td>
+                            <td>2,000 points</td>
+                            <td><center>No</center></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                </div>
+              </div>
+            </div>  
+
+            </br></br></br></br></br></br></br></br></br></br>
+            <div style="height: 800px; display: block;"></div>
+
+            <div id="AppLinkage" style="margin-top: 0px;">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel tile overflow_hidden">
+                  <div class="x_title">
+                    <h1>Link to your Apps</h1>
+                    <div>
+                      <p>
+                      Link your accounts from any of these apps to earn rewards points and unlock additional challenges.  The more apps you add the more data sources we can incorporate in our understanding and tracking of your health.  
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <table class="table table-striped" style="font-size: 15px;">
+                        <thead>
+                          <tr style="color:#94c63e; font-size:20px;">
+                            <th>Linked?</th>
+                            <th></th>
+                            <th>App</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row"><input type="checkbox" id="myCheck"></td>
+                            <td><img src="images/fitbit.png" height="40px" alt="..."></img></td>
+                            <td>FitBit</td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><input type="checkbox" id="myCheck"></td>
+                            <td><img src="images/runkeeper.jpeg" height="40px" alt="..."></td>
+                            <td>RunKeeper</td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><input type="checkbox" id="myCheck"></td>
+                            <td><img src="images/fitnesspal.png" height="40px" alt="..."></td>
+                            <td>MyFitnessPal</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+
+            <div style="height: 800px; display: block;"></div>
+            </br></br></br></br></br></br></br></br></br></br>
+
+          </div>
+
+      </div>
+    </div>
+	
+  </body>
+</html>
